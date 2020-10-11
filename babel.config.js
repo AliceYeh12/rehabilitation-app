@@ -3,7 +3,11 @@ module.exports = function(api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
+<<<<<<< HEAD
       ["import", { libraryName: "@ant-design/react-native" }]
+=======
+      "module:react-native-dotenv"
+>>>>>>> Create nutrition page
     ]
   };
 };

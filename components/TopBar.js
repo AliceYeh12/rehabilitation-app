@@ -8,7 +8,7 @@ class TopBar extends React.Component{
     render () {
         return (<View style={this.props.style}>
             <Text>
-                Title
+                Recovering Ravens
             </Text>
         </View>)
     }

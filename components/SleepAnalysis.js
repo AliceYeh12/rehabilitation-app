@@ -20,6 +20,7 @@ class SleepAnalysis extends React.Component{
         this.state = {
             sleepData: [],
             markedDatesArray: [],
+            selectedDate: ""
         }
         this.calendar = React.createRef()
     }
@@ -30,25 +31,31 @@ class SleepAnalysis extends React.Component{
 
     isDateBetweenWeek = (date=this.calendar.current.getSelectedDate()) => {
         console.log("COMPARISON", moment(date).format("YYYY-MM-DD"), moment(this.state.start).format("YYYY-MM-DD"), moment(this.state.end).format("YYYY-MM-DD"))
-        return this.state.start && 
+        return (this.state.start && 
                 this.state.end && 
                 moment(date).subtract(8, "days").isSameOrAfter(this.state.start, "day") && 
-                moment(date).add(8, "days").isSameOrBefore(this.state.end, 'day')
+                moment(date).add(8, "days").isSameOrBefore(this.state.end, 'day'))
     }
 
     dateSelected = (date) => {
-       /*  if(this.isDateBetweenWeek(date)){
+        this.setState(() => {
+            return {
+                selectedDate: moment(date).toDate()
+            }
+        }, () => {
+            if(this.isDateBetweenWeek(date)){
            
-        } 
-        else{
-            this.calendar.current.updateWeekView(date)
-            
-        }
-        console.log("DATE SELECTED", date) */
+            } 
+            else{
+                this.calendar.current.updateWeekView(date)
+            }
+            console.log("DATE SELECTED", date)
+        })
     }
 
     dateSelectedFromGraph = (date) => {
-        this.calendar.current.setSelectedDate(date.toDate())
+        console.log("DATE SELECTED FROM GRAPH", date)
+        this.calendar.current.setSelectedDate(date)
     }
 
     weekSelected = (start, end) => {
@@ -108,11 +115,10 @@ class SleepAnalysis extends React.Component{
     }
 
     renderRange = () => {
-        console.log("RENDER RANGE")
         const index = this.state.sleepData.findIndex((log) => {
-            return moment(log.endDate).isSame(this.calendar.current.getSelectedDate(), "day")
+            return moment(log.endDate).isSame(this.state.selectedDate, "day")
         })
-        console.log('DATE INDEX', index)
+        console.log("RENDER RANGE", 'DATE INDEX', index)
         return (<View key={`dateIndex${index}`}>
             {index != -1 ? <Text key="date">
                 {moment(this.state.sleepData[index].endDate).format("MM/DD/YYYY")}
@@ -163,7 +169,7 @@ class SleepAnalysis extends React.Component{
                     type={"map"}
                     dateSelected={this.dateSelectedFromGraph}
                 />
-                {this.state.sleepData.length > 0 && this.calendar.current.getSelectedDate() ? this.renderRange() : null}
+                {this.state.sleepData.length > 0 && this.state.selectedDate ? this.renderRange() : null}
                 
             </View>
             

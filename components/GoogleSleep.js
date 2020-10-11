@@ -10,6 +10,9 @@ const options = {
 
 const parse = (start, end, data) => {
     console.log(data)
+    for(let dataPoint of data){
+        dataPoint.sleepTime = moment(dataPoint.endDate).diff(dataPoint.startDate, "minutes")
+    }
     return data
 }
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import * as React from "react";
 import {
   StyleSheet,
@@ -76,6 +77,8 @@ export default class App extends React.Component {
     );
   }
 =======
+=======
+>>>>>>> 7dbb2f0fae3ddeb6bf6229af125c87d75c24629c
 import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, TextInput, View } from "react-native";
 import { API_KEY } from '@env'
@@ -185,7 +188,10 @@ class MealSuggestor extends React.Component {
       </View>
     )
   }
+<<<<<<< HEAD
 >>>>>>> Create nutrition page
+=======
+>>>>>>> 7dbb2f0fae3ddeb6bf6229af125c87d75c24629c
 }
 
 const styles = StyleSheet.create ({

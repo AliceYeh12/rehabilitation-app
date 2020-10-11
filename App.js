@@ -16,9 +16,9 @@ import {
 } from "@ant-design/react-native"
 import enUS from '@ant-design/react-native/lib/locale-provider/en_US';
 
-import NotificationBar from './components/NotifcationBar.jsx'
+import NotificationBar from './components/NotifcationBar'
 import SleepAnalysis from "./components/SleepAnalysis";
-import TopBar from "./components/TopBar.jsx";
+import TopBar from "./components/TopBar";
 
 const sections = [
   {

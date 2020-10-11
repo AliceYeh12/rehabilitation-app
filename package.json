@@ -1,10 +1,22 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+<<<<<<< HEAD
     "@ant-design/react-native": "^4.0.5",
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/datetimepicker": "^3.0.3",
     "acorn": "^6.4.2",
     "babel-plugin-import": "^1.13.0",
+=======
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+>>>>>>> Create nutrition page
+=======
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+>>>>>>> 7dbb2f0fae3ddeb6bf6229af125c87d75c24629c
     "expo": "~39.0.0",
     "expo-constants": "^9.2.0",
     "expo-splash-screen": "~0.6.2",
@@ -14,6 +26,7 @@
     "moment": "^2.29.1",
     "react": "16.13.1",
     "react-dom": "~16.13.0",
+<<<<<<< HEAD
     "react-native": "~0.63.3",
     "react-native-calendar-strip": "^2.0.9",
     "react-native-chart-kit": "^6.6.1",
@@ -27,6 +40,15 @@
     "react-native-unimodules": "~0.11.0",
     "react-native-web": "0.13.13",
     "rn-samsung-health": "^0.1.4"
+=======
+    "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.2.tar.gz",
+    "react-native-dotenv": "^2.4.1",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "^3.1.4",
+    "react-native-screens": "^2.10.1",
+    "react-native-web": "0.13.13"
+>>>>>>> Create nutrition page
   },
   "devDependencies": {
     "@babel/core": "7.9.0",

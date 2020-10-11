@@ -1,4 +1,6 @@
 node_modules
+<<<<<<< HEAD
+<<<<<<< HEAD
 .expo
 notes.txt
 # @generated expo-cli sync-2ef881133233622bdc507b622808fd28cb52985b
@@ -69,3 +71,9 @@ buck-out/
 web-build/
 
 # @end expo-cli
+=======
+.env
+>>>>>>> Create nutrition page
+=======
+.env
+>>>>>>> 7dbb2f0fae3ddeb6bf6229af125c87d75c24629c

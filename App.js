@@ -24,6 +24,10 @@ const sections = [
   {
     title: "Sleep",
     data: [<SleepAnalysis />]
+  },
+  {
+    title: "Nutrition",
+    data: [<NutritionHome />]
   }
 ]
 
@@ -75,3 +79,11 @@ export default class App extends React.Component {
     );
   }
 }
+
+
+
+
+
+
+
+

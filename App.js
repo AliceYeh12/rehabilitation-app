@@ -20,6 +20,8 @@ import NotificationBar from './components/NotifcationBar'
 import SleepAnalysis from "./components/SleepAnalysis";
 import TopBar from "./components/TopBar";
 
+import NutritionHome from './components/NutritionHome'
+
 const sections = [
   {
     title: "Sleep",

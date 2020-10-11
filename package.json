@@ -18,6 +18,7 @@
     "react-native-calendar-strip": "^2.0.9",
     "react-native-chart-kit": "^6.6.1",
     "react-native-clock-interval": "^2.0.2",
+    "react-native-dotenv": "^2.4.1",
     "react-native-gesture-handler": "~1.7.0",
     "react-native-google-fit": "^0.14.1",
     "react-native-modal-datetime-picker": "^9.0.0",

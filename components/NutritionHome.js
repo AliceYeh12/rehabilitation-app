@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, TextInput, View } from "react-native";
 import { API_KEY } from '@env'
 
-import MealSuggestor from './components/MealSuggestor'
+import MealSuggestor from './MealSuggestor'
 
 export default class NutritionHome extends React.Component {
   constructor() {
